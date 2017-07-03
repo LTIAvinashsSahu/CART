@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CART_BAL.clsBALApplication">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAIAAAIAgAgAAAAAAAAQAgAAAEAAAAAgAUAQAA=</HashCode>
+      <FileName>clsBALApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CART_BAL.clsBALCommon">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAgAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsBALCommon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CART_BAL.clsBALGenerateReports">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>clsBALGenerateReports.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CART_BAL.clsBALMasterData">
+    <Position X="0.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAQAAIAAAAAAAAAAAgAAAAABABAAAAABAgAABAAg=</HashCode>
+      <FileName>clsBALMasterData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CART_BAL.clsBALReports">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAAAAEAAAAAABAAAAAAACAAAAAAAEAAgAAABAAAAAAA=</HashCode>
+      <FileName>clsBALReports.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CART_BAL.clsBALUsers">
+    <Position X="5.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAgAAAAAAQAAAAAAEAAAAAAQAAA=</HashCode>
+      <FileName>clsBALUsers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CARTApplication.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CARTApplication_com_service_now_viadev1_ServiceNow_sc_req_item" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://viadev.service-now.com/sc_req_item.do?SOAP</Value>
+    </Setting>
+    <Setting Name="CARTApplication_SNRequest" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://viatest.service-now.com/sc_req_item.do?SOAP</Value>
+    </Setting>
+    <Setting Name="CARTApplication_SNRequest_ServiceNow_sc_req_item" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://vmntest.service-now.com/sc_req_item.do?SOAP</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

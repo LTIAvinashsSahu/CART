@@ -1,0 +1,311 @@
+﻿/* 
+Author: SMS Content
+Comments / remarks: Designed by Specialized Marketing Services Email: sms.content@Lntinfotech.com 
+*/
+/*@charset "utf-8";*/
+
+body{
+	margin:0px;
+	font-family: "Calibri";
+	font-size:14px;
+	color:#000000; 	
+	}
+	
+.pplpickstyle1
+{
+	font-size: 11px; 
+	font-family: Calibri;
+	color: #000000; 
+}
+hidden
+{
+display:none;
+	}
+.topimg {
+	background-attachment: fixed;
+	background-image: url(../Images/top_img.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+
+.userdetails {
+	font-family: "Calibri"; font-size:14px; font-weight:bold; color:#000000; padding-right:10px; text-align:right; vertical-align:middle;  
+	}
+	
+.footer { 
+	font-family: "Calibri"; font-size:12px; color:#ffffff; text-align:center;  background-image: url(../Images/bg_btm.jpg); background-repeat:repeat-x; 
+	position:static;bottom:0px;
+	}
+.menuitem  
+{
+	border-style:solid;
+	border-bottom:1px;
+	border-bottom-color:#ffffff;
+	border-left:1px;
+	border-left-color:#ffffff;
+	border-right:1px;
+	border-right-color:#ffffff;
+	border-top:1px;
+	border-top-color:#ffffff;
+	font-family: "Calibri"; font-size:16px; color:#ffffff;
+	}
+
+	
+.text_blue_big {
+	font-family: "Calibri"; font-size:18px; font-weight: bold; color:#00619f;	
+	}
+	.text_blue_mid {
+	font-family: "Calibri"; font-size:17px; font-weight: bold; color:#00619f;	
+	}
+.text_blue_hd {
+	font-family: "Calibri"; font-size:17px; color:#00619f;	
+	}
+	.text_white {
+	font-family: "Calibri"; font-size:18px; color:#ffffff;	
+	}		
+.text_black {
+	font-family: "Calibri"; font-size:14px; color:#000000;	
+	}
+	.text_blue_link {
+	font-family: "Calibri"; font-size:14px; color:blue;	
+	}
+	.ReportsPageHeader
+{
+	color:Black;
+	font-weight:bold;
+	font-size:14px
+}
+.SmallHeading
+{
+	color:Black;
+	font-weight:normal;
+	font-size:14px
+}
+.lblerror
+{
+	color:Red;
+	font-size:14px;
+	font-family: "Calibri"; 
+}
+.lblSuccess
+{
+	color:Green;
+	font-size:14px;
+	font-family: "Calibri"; 
+}
+.datagrid
+{
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	font-size: 11px;
+	border-left: white 2px solid;
+	border-bottom: white 2px solid;	
+	background-color: white;
+	border :1;
+	font-family: Calibri;	
+	
+}
+.datagridSelectedItem
+{
+	font-weight: bold;
+	color: white;
+	background-color: #008a8c;
+}
+.datagridAlternating
+{
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	background-color:White;
+	border-right-width: 1px;
+}
+.datagridItem
+{
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-color:Black;
+}
+.datagridHeader
+{	
+	height: 15px;
+	background-color: #009EDE;	
+	font-size: 14px;
+	font-family: Calibri;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration:none;
+}
+.datagridHeader a,.datagridHeader a:link
+{	
+	height: 15px;
+	background-color: #009EDE;	
+	font-size: 14px;
+	/*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+	font-family: Calibri;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration:underline;
+}
+.comment a,.comment a:link,.comment a:visited
+{
+	font-size: 12px;
+	font-family: Calibri;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration:underline;
+}
+.datagridFooter
+{
+	color: black;
+	background-color: #cccccc;
+}
+.datagridFooterWhiteBg {
+	COLOR: black; BACKGROUND-COLOR: #ffffff
+}
+.datagridPaging {
+	COLOR: black; BACKGROUND-COLOR: #cccccc
+}
+.datalist {
+	BORDER-RIGHT: white 0px solid; BORDER-TOP: white 0px solid; FONT-SIZE: small; BORDER-LEFT: white 0px solid; BORDER-BOTTOM: white 0px solid; FONT-FAMILY: Calibri; BACKGROUND-COLOR: white
+}
+
+.datagridTextBox
+{
+	background-color:White ;
+	color :Black ;	
+	width :200px ;
+}
+.datagridItemStyle
+{
+	background-color :Green ;
+	color:Black ;
+}
+.datagridAlternateRowStyle
+{
+	background-color:#ffcc33;
+	color:Blue;	
+}
+.datagridRowStyle
+{
+	background-color:#B8D6E1;
+	color:Black;
+}
+.hiddencol
+{
+	display:none;
+}	
+
+.button
+{
+	font-family: Calibri;
+	font-size:14px;
+	HEIGHT: 23px;
+    width:70px;
+}
+.modalBackground {
+	background-color:Gray;
+
+	filter:alpha(opacity=70);
+
+	
+}  
+ #UpdateProgress1{
+      width: 400px; background-color: Gray; 
+      bottom: 0%; left: 0px; 
+      	filter:alpha(opacity=70)
+     }
+	
+
+a.link_ul:link {font-family: "Calibri"; font-size:12px;  COLOR: #000000; vertical-align: middle; text-decoration: underline;}
+a.link_ul:visited {font-family: "Calibri"; font-size:12px; COLOR: #000000; vertical-align: middle; text-decoration: underline;}
+a.link_ul:hover{font-family: "Calibri"; font-size:12px; COLOR: #000000; vertical-align: middle; text-decoration:none;}
+a.link_ul:active {font-family: "Calibri"; font-size:12px; COLOR: #000000; vertical-align: middle; text-decoration: underline;}
+
+.menuitem
+{
+	z-index:5000;
+	}
+	
+/*added by suman*/
+/*----------------------------- Pager Class---------------------*/
+
+.pagerOuterTable
+{
+	border-collapse: collapse;
+	border: 1px solid #4d5c93;
+	background-color: #d6cde2;
+	color: #39437e;
+}
+
+.pageCounter
+{
+	font-family: Calibri;
+	font-size: 12pt;
+	color: #ffffff;
+	background-color: #39437e;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.pageFirstLast
+{
+	font-family: Calibri;
+	font-size: 13pt;
+	color: #4d5c93;
+	background-color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.pagePrevNextNumber
+{
+	font-family: Calibri;
+	font-size: 13pt;
+	color: #4d5c93;
+	background-color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	width: 20px;
+}
+
+.pageCurrentNumber
+{
+	font-family: Calibri;
+	font-size: 13pt;
+	color: #4d5c93;
+	font-weight: bold;
+	background-color: #E8F1F9;
+	text-align: center;
+	vertical-align: middle;
+	width: 20px;
+}
+
+.pageGroups
+{
+	font-family: Calibri;
+	font-size: 12pt;
+}
+
+.pagerLink, .pagerLink#hover, .pagerLink#active, .pagerLink#visited
+{
+	font-family: Calibri;
+	font-size: 13pt;
+	color: #4d5c93;
+	text-decoration: none;
+}
+/*end pager class*/
+	.section_header
+{
+	font-family: Calibri;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	height: 17px;
+	padding: 3px;
+	background-color: #BECAD6;
+}
+
+/*end by suman*/

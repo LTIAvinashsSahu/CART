@@ -1,0 +1,144 @@
+body {
+	background-image: url(main_bg.jpg);
+	background-repeat:repeat-x;
+	background-color:#DEDEDE;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: Calibri;
+	font-size:11px;
+}
+
+.whiteNormal {
+color:#FFFFFF
+}
+
+
+.footer_td {
+color:#FFFFFF;
+background-color:#646464;
+text-align:center;
+height:22px;
+}
+.dark_green
+{
+	color:Green;
+}
+.dark_green a
+{
+	color:Green;
+}
+.header_txt
+{
+	color:Green;
+	font-weight:bold;
+	font-size:12 Px;
+}
+.ReportsPageHeader
+{
+	color:Black;
+	font-weight:bold;
+	font-size:14px
+}
+.SmallHeading
+{
+	color:Black;
+	font-weight:bold;
+	font-size:12px
+}
+.lblerror
+{
+	color:Red;
+	font-size:10px;
+}
+
+.datagrid
+{
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	font-size: 11px;
+	border-left: white 2px solid;
+	border-bottom: white 2px solid;	
+	background-color: white;
+	border :1;
+	font-family: Calibri;	
+	
+}
+.datagridSelectedItem
+{
+	font-weight: bold;
+	color: white;
+	background-color: #008a8c;
+}
+.datagridAlternating
+{
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	background-color:White;
+	border-right-width: 1px;
+}
+.datagridItem
+{
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+}
+.datagridHeader
+{	
+	height: 15px;
+	background-color: #999999;	
+	font-size: 12px;
+	font-family: Calibri;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration:none;
+}
+.datagridFooter
+{
+	color: black;
+	background-color: #cccccc;
+}
+.datagridFooterWhiteBg {
+	COLOR: black; BACKGROUND-COLOR: #ffffff
+}
+.datagridPaging {
+	COLOR: black; BACKGROUND-COLOR: #cccccc
+}
+.datalist {
+	BORDER-RIGHT: white 0px solid; BORDER-TOP: white 0px solid; FONT-SIZE: small; BORDER-LEFT: white 0px solid; BORDER-BOTTOM: white 0px solid; FONT-FAMILY: Calibri; BACKGROUND-COLOR: white
+}
+
+.datagridTextBox
+{
+	background-color:White ;
+	color :Black ;	
+	width :200px ;
+}
+.datagridItemStyle
+{
+	background-color :Green ;
+	color:Black ;
+}
+.datagridAlternateRowStyle
+{
+	background-color:#E7E7E7;
+	color:Black;	
+}
+.datagridRowStyle
+{
+	background-color:#B8D6E1;
+	color:Black;
+}
+.test
+{
+	
+	position:absolute;	
+	z-index:8;
+}
+.hiddencol
+{
+	display:none;
+}

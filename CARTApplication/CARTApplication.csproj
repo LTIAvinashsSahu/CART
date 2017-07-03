@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43DE33C6-0BA7-4534-B2F2-21C1F208BE53}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CARTApplication</RootNamespace>
+    <AssemblyName>CARTApplication</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.20315, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADUserControl.ascx.cs">
+      <DependentUpon>ADUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADUserControl.ascx.designer.cs">
+      <DependentUpon>ADUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AllAccounts.aspx.cs">
+      <DependentUpon>AllAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllAccounts.aspx.designer.cs">
+      <DependentUpon>AllAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllReports.aspx.cs">
+      <DependentUpon>AllReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllReports.aspx.designer.cs">
+      <DependentUpon>AllReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDetail.aspx.cs">
+      <DependentUpon>ApplicationDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationDetail.aspx.designer.cs">
+      <DependentUpon>ApplicationDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationMapping.aspx.cs">
+      <DependentUpon>ApplicationMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationMapping.aspx.designer.cs">
+      <DependentUpon>ApplicationMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\LogException.cs" />
+    <Compile Include="App_Data\LogHelper.cs" />
+    <Compile Include="CART.Master.cs">
+      <DependentUpon>CART.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CART.Master.designer.cs">
+      <DependentUpon>CART.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CARTMasterPage.Master.cs">
+      <DependentUpon>CARTMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CARTMasterPage.Master.designer.cs">
+      <DependentUpon>CARTMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Common\clsCustomPager.cs" />
+    <Compile Include="Approvers.aspx.cs">
+      <DependentUpon>Approvers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approvers.aspx.designer.cs">
+      <DependentUpon>Approvers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CARTMasterBlank.Master.cs">
+      <DependentUpon>CARTMasterBlank.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CARTMasterBlank.Master.designer.cs">
+      <DependentUpon>CARTMasterBlank.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OutstandingAccountReport.aspx.cs">
+      <DependentUpon>OutstandingAccountReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OutstandingAccountReport.aspx.designer.cs">
+      <DependentUpon>OutstandingAccountReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MappingReport.aspx.cs">
+      <DependentUpon>MappingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MappingReport.aspx.designer.cs">
+      <DependentUpon>MappingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PendingApprovals.aspx.cs">
+      <DependentUpon>PendingApprovals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PendingApprovals.aspx.designer.cs">
+      <DependentUpon>PendingApprovals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubmissionReport.aspx.cs">
+      <DependentUpon>SubmissionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubmissionReport.aspx.designer.cs">
+      <DependentUpon>SubmissionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnmapdSecGrp.aspx.cs">
+      <DependentUpon>UnmapdSecGrp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnmapdSecGrp.aspx.designer.cs">
+      <DependentUpon>UnmapdSecGrp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfrmUnauthorized.aspx.cs">
+      <DependentUpon>wfrmUnauthorized.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfrmUnauthorized.aspx.designer.cs">
+      <DependentUpon>wfrmUnauthorized.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LinuxServer.aspx.cs">
+      <DependentUpon>LinuxServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LinuxServer.aspx.designer.cs">
+      <DependentUpon>LinuxServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LastRemovedReport.aspx.cs">
+      <DependentUpon>LastRemovedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LastRemovedReport.aspx.designer.cs">
+      <DependentUpon>LastRemovedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseMappings.aspx.cs">
+      <DependentUpon>DatabaseMappings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatabaseMappings.aspx.designer.cs">
+      <DependentUpon>DatabaseMappings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBServers.aspx.cs">
+      <DependentUpon>DBServers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBServers.aspx.designer.cs">
+      <DependentUpon>DBServers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityGroupMapping.aspx.cs">
+      <DependentUpon>SecurityGroupMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurityGroupMapping.aspx.designer.cs">
+      <DependentUpon>SecurityGroupMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityGrpAppMapping.aspx.cs">
+      <DependentUpon>SecurityGrpAppMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurityGrpAppMapping.aspx.designer.cs">
+      <DependentUpon>SecurityGrpAppMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectiveApproval.aspx.cs">
+      <DependentUpon>SelectiveApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectiveApproval.aspx.designer.cs">
+      <DependentUpon>SelectiveApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Session.aspx.cs">
+      <DependentUpon>Session.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session.aspx.designer.cs">
+      <DependentUpon>Session.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Export.cs" />
+    <Compile Include="Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Datagrid.aspx.cs">
+      <DependentUpon>Datagrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Datagrid.aspx.designer.cs">
+      <DependentUpon>Datagrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FetchData.aspx.cs">
+      <DependentUpon>FetchData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FetchData.aspx.designer.cs">
+      <DependentUpon>FetchData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Initial.aspx.cs">
+      <DependentUpon>Initial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Initial.aspx.designer.cs">
+      <DependentUpon>Initial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Initiatives.aspx.cs">
+      <DependentUpon>Initiatives.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Initiatives.aspx.designer.cs">
+      <DependentUpon>Initiatives.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewUserReport.aspx.cs">
+      <DependentUpon>NewUserReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewUserReport.aspx.designer.cs">
+      <DependentUpon>NewUserReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecievedReports.aspx.cs">
+      <DependentUpon>RecievedReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecievedReports.aspx.designer.cs">
+      <DependentUpon>RecievedReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectApplication.aspx.cs">
+      <DependentUpon>SelectApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectApplication.aspx.designer.cs">
+      <DependentUpon>SelectApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApproverMapping.aspx.cs">
+      <DependentUpon>ApproverMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApproverMapping.aspx.designer.cs">
+      <DependentUpon>ApproverMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comments.aspx.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comments.aspx.designer.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerList.aspx.cs">
+      <DependentUpon>ServerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServerList.aspx.designer.cs">
+      <DependentUpon>ServerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShareList.aspx.cs">
+      <DependentUpon>ShareList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShareList.aspx.designer.cs">
+      <DependentUpon>ShareList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SNFunctions.cs" />
+    <Compile Include="UserRoles.aspx.cs">
+      <DependentUpon>UserRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRoles.aspx.designer.cs">
+      <DependentUpon>UserRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewAccounts.aspx.cs">
+      <DependentUpon>ReviewAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReviewAccounts.aspx.designer.cs">
+      <DependentUpon>ReviewAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SNRequest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="wfrmErrorPage.aspx.cs">
+      <DependentUpon>wfrmErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfrmErrorPage.aspx.designer.cs">
+      <DependentUpon>wfrmErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfrmScheduleEmail.aspx.cs">
+      <DependentUpon>wfrmScheduleEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfrmScheduleEmail.aspx.designer.cs">
+      <DependentUpon>wfrmScheduleEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfrmSessionTimeOut.aspx.cs">
+      <DependentUpon>wfrmSessionTimeOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfrmSessionTimeOut.aspx.designer.cs">
+      <DependentUpon>wfrmSessionTimeOut.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\MSN_Finance\default.css" />
+    <Content Include="CART.Master" />
+    <Content Include="CSS\main.css" />
+    <Content Include="Images\cart2.jpg" />
+    <Content Include="Images\mesh_document_storage_cart.summ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\MSN_CherryBlossom\default.css" />
+    <Content Include="App_Themes\MSN_Finance\default.skin" />
+    <Content Include="App_Themes\MSN_Finance\Images\bar.JPG" />
+    <Content Include="App_Themes\MSN_Finance\Images\bullet.JPG" />
+    <Content Include="App_Themes\MSN_Finance\Images\logo.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AllReports.aspx" />
+    <Content Include="ApplicationDetail.aspx" />
+    <Content Include="ApplicationMapping.aspx" />
+    <Content Include="App_Themes\MSN_CherryBlossom\default.skin" />
+    <Content Include="App_Themes\MSN_CherryBlossom\Images\bar.JPG" />
+    <Content Include="App_Themes\MSN_CherryBlossom\Images\bullet.JPG" />
+    <Content Include="App_Themes\MSN_CherryBlossom\Images\logo.JPG" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\images.jpg" />
+    <Content Include="Images\rsort.gif" />
+    <Content Include="Images\sort.gif" />
+    <Content Include="SelectApplication.aspx" />
+    <Content Include="ApproverMapping.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CART_BAL\CART_BAL.csproj">
+      <Project>{557C1D5D-CC5E-4354-88E4-A276217E5EDF}</Project>
+      <Name>CART_BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CART_DAL\CART_DAL.csproj">
+      <Project>{5E7164A4-173E-454C-B9DD-D37EE887FE59}</Project>
+      <Name>CART_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CART_EAL\CART_EAL.csproj">
+      <Project>{053E6DDA-BAB7-4B5F-935D-17B34722C6F0}</Project>
+      <Name>CART_EAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADUserControl.ascx" />
+    <Content Include="AllAccounts.aspx" />
+    <Content Include="CARTMasterPage.Master" />
+    <Content Include="codebase\dhtmlxcommon.js" />
+    <Content Include="codebase\dhtmlxgrid.css" />
+    <Content Include="codebase\dhtmlxgrid.js" />
+    <Content Include="codebase\dhtmlxgridcell.js" />
+    <Content Include="codebase\dhtmlxgrid_skins.css" />
+    <Content Include="codebase\ext\dhtmlxgrid_srnd.js" />
+    <Content Include="codebase\imgs\ar_left.gif" />
+    <Content Include="codebase\imgs\ar_left_abs.gif" />
+    <Content Include="codebase\imgs\ar_left_abs_dis.gif" />
+    <Content Include="codebase\imgs\ar_left_dis.gif" />
+    <Content Include="codebase\imgs\ar_right.gif" />
+    <Content Include="codebase\imgs\ar_right_abs.gif" />
+    <Content Include="codebase\imgs\ar_right_abs_dis.gif" />
+    <Content Include="codebase\imgs\ar_right_dis.gif" />
+    <Content Include="codebase\imgs\blanc.gif" />
+    <Content Include="codebase\imgs\blank.gif" />
+    <Content Include="codebase\imgs\combo_select.gif" />
+    <Content Include="codebase\imgs\combo_select_dhx_black.gif" />
+    <Content Include="codebase\imgs\combo_select_dhx_blue.gif" />
+    <Content Include="codebase\imgs\combo_select_dhx_skyblue.gif" />
+    <Content Include="codebase\imgs\dyn_.gif" />
+    <Content Include="codebase\imgs\dyn_down.gif" />
+    <Content Include="codebase\imgs\dyn_up.gif" />
+    <Content Include="codebase\imgs\false.gif" />
+    <Content Include="codebase\imgs\folder.gif" />
+    <Content Include="codebase\imgs\green.gif" />
+    <Content Include="codebase\imgs\header_bg.gif" />
+    <Content Include="codebase\imgs\header_bg_60.gif" />
+    <Content Include="codebase\imgs\imageloaderror.gif" />
+    <Content Include="codebase\imgs\item_chk0.gif" />
+    <Content Include="codebase\imgs\item_chk0_dis.gif" />
+    <Content Include="codebase\imgs\item_chk1.gif" />
+    <Content Include="codebase\imgs\item_chk1_dis.gif" />
+    <Content Include="codebase\imgs\leaf.gif" />
+    <Content Include="codebase\imgs\loading.gif" />
+    <Content Include="codebase\imgs\minus.gif" />
+    <Content Include="codebase\imgs\plus.gif" />
+    <Content Include="codebase\imgs\radio_chk0.gif" />
+    <Content Include="codebase\imgs\radio_chk0_dis.gif" />
+    <Content Include="codebase\imgs\radio_chk1.gif" />
+    <Content Include="codebase\imgs\radio_chk1_dis.gif" />
+    <Content Include="codebase\imgs\red.gif" />
+    <Content Include="codebase\imgs\results.gif" />
+    <Content Include="codebase\imgs\skinA_header.png" />
+    <Content Include="codebase\imgs\skinB_header.png" />
+    <Content Include="codebase\imgs\skinC_header.png" />
+    <Content Include="codebase\imgs\skinC_top_left.gif" />
+    <Content Include="codebase\imgs\skinC_top_right.gif" />
+    <Content Include="codebase\imgs\skinD_bottom_left.gif" />
+    <Content Include="codebase\imgs\skinD_bottom_right.gif" />
+    <Content Include="codebase\imgs\skinD_header.png" />
+    <Content Include="codebase\imgs\skin_light_header.png" />
+    <Content Include="codebase\imgs\skin_modern_header.png" />
+    <Content Include="codebase\imgs\sky_blue_grid.gif" />
+    <Content Include="codebase\imgs\sky_blue_sel.png" />
+    <Content Include="codebase\imgs\sky_blue_sel2.png" />
+    <Content Include="codebase\imgs\sort_asc.gif" />
+    <Content Include="codebase\imgs\sort_desc.gif" />
+    <Content Include="codebase\imgs\true.gif" />
+    <Content Include="codebase\skins\dhtmlxgrid_dhx_black.css" />
+    <Content Include="codebase\skins\dhtmlxgrid_dhx_blue.css" />
+    <Content Include="codebase\skins\dhtmlxgrid_dhx_skyblue.css" />
+    <Content Include="Approvers.aspx" />
+    <Content Include="wfrmUnauthorized.aspx" />
+    <Content Include="LinuxServer.aspx" />
+    <Content Include="Images\Button-Refresh-icon.png" />
+    <Content Include="LastRemovedReport.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="DatabaseMappings.aspx" />
+    <Content Include="DBServers.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\cal_icon.jpg" />
+    <Content Include="Images\firstpage.gif" />
+    <Content Include="Images\lastpage.gif" />
+    <Content Include="Images\nextpage.gif" />
+    <Content Include="Images\prevpage.gif" />
+    <Content Include="SecurityGroupMapping.aspx" />
+    <Content Include="SecurityGrpAppMapping.aspx" />
+    <Content Include="SelectiveApproval.aspx" />
+    <Content Include="Session.aspx" />
+    <Content Include="Reports.aspx" />
+    <Content Include="CSS\dhtmlxgrid_dhx_black.css" />
+    <Content Include="CSS\dhtmlxgrid_dhx_blue.css" />
+    <Content Include="CSS\dhtmlxgrid_dhx_skyblue.css" />
+    <Content Include="CSS\Styles.css" />
+    <Content Include="Datagrid.aspx" />
+    <Content Include="FetchData.aspx" />
+    <Content Include="Images\bg_btm.jpg" />
+    <Content Include="Images\bg_top.jpg" />
+    <Content Include="Images\but_edit.png" />
+    <Content Include="Images\but_edit_mo.png" />
+    <Content Include="Images\image002.gif" />
+    <Content Include="Images\image003.gif" />
+    <Content Include="Images\logo_cart.jpg" />
+    <Content Include="Images\menuitem.JPG" />
+    <Content Include="Images\pplpicker.gif" />
+    <Content Include="Images\spinner1-bluey.gif" />
+    <Content Include="Images\tab_generatereports.png" />
+    <Content Include="Images\tab_generatereports_mo.png" />
+    <Content Include="Images\tab_help.png" />
+    <Content Include="Images\tab_help_mo.png" />
+    <Content Include="Images\tab_reports.png" />
+    <Content Include="Images\tab_reports_mo.png" />
+    <Content Include="Images\tab_settings.png" />
+    <Content Include="Images\tab_settings_mo.png" />
+    <Content Include="Images\top_img.jpg" />
+    <Content Include="Initial.aspx" />
+    <Content Include="CSS\style.css" />
+    <Content Include="Comments.aspx" />
+    <Content Include="Initiatives.aspx" />
+    <Content Include="NewUserReport.aspx" />
+    <Content Include="RecievedReports.aspx" />
+    <Content Include="ServerList.aspx" />
+    <Content Include="ShareList.aspx" />
+    <Content Include="UserRoles.aspx" />
+    <Content Include="ReviewAccounts.aspx" />
+    <Content Include="wfrmErrorPage.aspx" />
+    <Content Include="wfrmScheduleEmail.aspx" />
+    <Content Include="wfrmSessionTimeOut.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://vmntest.service-now.com/sc_req_item.do%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SNRequest\</RelPath>
+      <UpdateFromURL>https://vmntest.service-now.com/sc_req_item.do%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CARTApplication_SNRequest_ServiceNow_sc_req_item</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CARTMasterBlank.Master" />
+    <Content Include="App_Browsers\BrowserFile1.browser" />
+    <Content Include="OutstandingAccountReport.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="MappingReport.aspx" />
+    <Content Include="PendingApprovals.aspx" />
+    <Content Include="SubmissionReport.aspx" />
+    <Content Include="UnmapdSecGrp.aspx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SNRequest\deleteMultipleResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SNRequest\deleteRecordResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SNRequest\getKeysResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SNRequest\getRecordsResponseGetRecordsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SNRequest\getResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SNRequest\insertResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SNRequest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SNRequest\sc_req_item.wsdl" />
+    <None Include="Web References\SNRequest\updateResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4955</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

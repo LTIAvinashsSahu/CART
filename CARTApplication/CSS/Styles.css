@@ -1,0 +1,196 @@
+
+.style1 {
+	font-size: 20px;
+	font-family: "Calibri";
+	color: #D58700;
+}
+.style2 
+{
+	font-size: 11px;
+	font-family: Calibri;
+	color: #F6F5F4
+}
+.style3
+{
+	font-size: 14px;
+	font-family: Calibri;
+	font-weight: bold;
+	color: red;
+}
+.style4 
+{
+	font-size: 11px;
+	font-family: Calibri;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.style5 
+{
+	font-size: 11px;
+	font-family: Calibri;
+}
+.style6 {	font-size: 11px;
+	font-family: Calibri;
+	color:#5E533E;
+}
+
+.style7 
+{
+	font-size: 11px; 
+	font-family: Calibri; 
+	color: #333333; 
+	font-weight: bold; 
+}
+
+.style8 
+{
+	font-size: 10px; 
+	font-family: Calibri;
+	color: #FFFFFF; 
+}
+
+.style9 
+{
+	font-size: 24px; 
+	font-family: Calibri;
+	color: #000000; 
+}
+
+.style10
+{
+	font-size: 11px; 
+	font-family: Calibri;
+	color: #0000FF; 
+}
+.input_box_locked
+{
+	height:22px; 
+	width:255px;
+	background-color:#FFFFFF;
+	font-size:12px; 
+	font-family:Calibri; 
+	border:1px solid #CCCCCC;
+	background-repeat:no-repeat;
+	vertical-align:bottom;
+	padding-top:4px
+}
+
+.input_box_locked_bu
+{
+	height:22px; 
+	width:190px;
+	background-color:#FFFFFF;
+	font-size:12px; 
+	font-family:Calibri; 
+	border:1px solid #CCCCCC;
+	background-repeat:no-repeat;
+	vertical-align:bottom;
+	padding-top:4px
+}
+
+.input_box_white
+{
+	width:150px;
+	background-color:#FFFFFF;
+	font-size:11px; 
+	font-family:Calibri; 
+}
+
+.button_blue
+{
+	background-color:#6C8A13;
+	border:1px solid #6C8A13;
+	font-size: 11px;
+	font-family: Calibri;
+	color: #ffffff;
+	padding-left:2px;
+	padding-right:2px;
+    }
+.legendstyle
+{
+	color:#D58700;
+	font-size: 11px;
+	font-family: Calibri;
+}
+.pplpickstyle1
+{
+	font-size: 11px; 
+	font-family: Calibri;
+	color: #000000; 
+}
+.datagrid
+{
+	border-right: white 2px solid;
+	border-top: white 2px solid;
+	font-size: 11px;
+	border-left: white 2px solid;
+	border-bottom: white 2px solid;	
+	background-color: white;
+	border :1;
+	font-family: Calibri;	
+	
+}
+
+.lblErr
+{
+    color:Red;
+    font-size: 11px;
+	font-family: Calibri;
+}
+
+body {
+	background-color: #B9B3A8;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+
+.navlink {	font-size: 12px;
+	font-family: Calibri;
+	color:#D58700;
+	text-decoration:none;
+	background-image:url(Images/arrow1.gif);
+	background-repeat:no-repeat;
+	background-position:left center;
+	padding-left:18px;
+}
+a.navlink {	
+    font-size: 12px;
+	font-family: Calibri;
+	color: #D58700;
+	text-decoration:none;
+}
+a.navlink:hover {	
+    font-size: 12px;
+	font-family: Calibri;
+	color: #76684E;
+	text-decoration:none;
+}
+
+.button_blue 
+{
+background-image:url(images/leap_28.gif);
+height:22px;
+border:none;
+font-size: 11px;
+font-family: Calibri;
+color:#000000;
+padding-left:4px;
+padding-right:4px
+}
+
+.input_box_err
+{
+	background-color: #FFFF99;
+}
+
+.watermark
+{
+	font-family: Calibri;
+	font-size: 10px;
+	color: #FF6C6C;
+}
+

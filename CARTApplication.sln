@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CARTApplication", "CARTApplication\CARTApplication.csproj", "{43DE33C6-0BA7-4534-B2F2-21C1F208BE53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CART_DAL", "CART_DAL\CART_DAL.csproj", "{5E7164A4-173E-454C-B9DD-D37EE887FE59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CART_BAL", "CART_BAL\CART_BAL.csproj", "{557C1D5D-CC5E-4354-88E4-A276217E5EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CART_EAL", "CART_EAL\CART_EAL.csproj", "{053E6DDA-BAB7-4B5F-935D-17B34722C6F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43DE33C6-0BA7-4534-B2F2-21C1F208BE53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DE33C6-0BA7-4534-B2F2-21C1F208BE53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DE33C6-0BA7-4534-B2F2-21C1F208BE53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DE33C6-0BA7-4534-B2F2-21C1F208BE53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E7164A4-173E-454C-B9DD-D37EE887FE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7164A4-173E-454C-B9DD-D37EE887FE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E7164A4-173E-454C-B9DD-D37EE887FE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7164A4-173E-454C-B9DD-D37EE887FE59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{557C1D5D-CC5E-4354-88E4-A276217E5EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{557C1D5D-CC5E-4354-88E4-A276217E5EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{557C1D5D-CC5E-4354-88E4-A276217E5EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{557C1D5D-CC5E-4354-88E4-A276217E5EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{053E6DDA-BAB7-4B5F-935D-17B34722C6F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053E6DDA-BAB7-4B5F-935D-17B34722C6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053E6DDA-BAB7-4B5F-935D-17B34722C6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053E6DDA-BAB7-4B5F-935D-17B34722C6F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
